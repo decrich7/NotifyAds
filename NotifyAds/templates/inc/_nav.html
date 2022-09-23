@@ -1,0 +1,85 @@
+    <div class="cli-block cli-light js-force js-strong" block-data="[object Object]" data-block-container="">
+        <header data-element="786a2401-363d-44ad-9555-3c47ad7d906a/aad8dc47-0936-4911-b74d-25cfe65ad269" data-header=""
+                class="cli-header full">
+            <div class="cli-content">
+                <a data-element="7942042b-05c1-48ae-85a9-21d2577f438c/58d5f2b3-7821-4d02-92f8-c564f66bd899"
+                   class="cli-header-name cli-bold" href="{% url 'home' %}" style="text-decoration: none;">Ads Notify
+                </a>
+                <div data-element="48dc3d1c-0998-4c1f-8329-baf56d4810bc/56f922ff-4ca3-44bb-ac1f-3156eddf2ba4"
+                     data-header-content="" class="cli-header-content">
+                    <div class="cli-bg" style="background: rgb(255, 255, 255);"><!----><!---->
+                        <div class="cli-fade"></div>
+                    </div>
+                    <button data-header-close="" class="cli-header-menu-btn"
+                            style="color: rgba(0, 0, 0, 0.7); border-color: rgba(0, 0, 0, 0.7);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                             aria-labelledby="cli-x" role="presentation"><title id="cli-x" lang="en"></title>
+                            <g fill="currentColor">
+                                <path d="M6.29289 7.70711C5.90237 7.31658 5.90237 6.68342 6.29289 6.29289C6.68342 5.90237 7.31658 5.90237 7.70711 6.29289L12 10.5858L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L13.4142 12L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L12 13.4142L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L10.5858 12L6.29289 7.70711Z"
+                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </g>
+                        </svg>
+                    </button>
+                    <ul data-header-menu="" class="cli-header-menu">
+
+                        <li class="cli-header-menu__item"><a target=""
+                                                             data-element="48dc3d1c-0998-4c1f-8329-baf56d4810bc/5acc2411-9f7b-478c-8303-470c609d49b0"
+                                                             data-popup="" data-order="" data-anchor=""
+                                                             class="cli-header-menu__item-link cli-body-1 cli-regular"
+                                                             style="display: none;" href="{% url 'home' %}"><br
+                                class="ProseMirror-trailingBreak"></a><!----></li>
+                        {% if request.user.is_authenticated %}
+                        <li class="cli-header-menu__item" style="margin-right: 50px;"><a style="text-decoration: none;"
+                                                             class="cli-header-menu__item-link cli-body-1 cli-regular"
+                                                             href="{% url 'filters' %}" style="margin-right: 300px;">Фильтры</a></li>
+                        <li class="cli-header-menu__item" style="margin-right: 50px;"><a style="text-decoration: none;"
+                                                             class="cli-header-menu__item-link cli-body-1 cli-regular"
+                                                             href="{% url 'new_filter' %}">Создать фильтр</a></li>
+                        <li class="cli-header-menu__item" style="margin-right: 50px;"><a style="text-decoration: none;"
+                                                             class="cli-header-menu__item-link cli-body-1 cli-regular"
+                                                             href="{% url 'home' %}">Главная страница</a></li>
+                         <li class="cli-header-menu__item">{{ user.username }}&nbsp;|&nbsp;<a style="text-decoration: none;"
+                                                            class="cli-header-menu__item-link cli-body-1 cli-regular"
+                                                            href="{% url 'logout' %}">Выйти</a></li>
+                        {% else %}
+                        <li class="cli-header-menu__item"><a style="text-decoration: none;"
+                                                             class="cli-header-menu__item-link cli-body-1 cli-regular"
+                                                             href="{% url 'login' %}">Войти&nbsp;|</a><a
+                                style="text-decoration: none;"
+                                class="cli-header-menu__item-link cli-body-1 cli-regular"
+                                href="{% url 'register' %}">&nbsp;Регистрация</a></li>
+                        <li class="cli-header-menu__item"><a style="text-decoration: none;"
+                                                             class="cli-header-menu__item-link cli-body-1 cli-regular"
+                                                             href="{% url 'home' %}">Главная страница</a></li>
+                        {% endif %}
+
+                    </ul>
+                    <div class="cli-header-data">
+                        <div data-element="5500c83f-36f6-4469-a60c-6f05e438b111/6630e822-4d25-4e29-af84-479eaa6d3bcf"
+                             class="cli-caption" style="display: none;"><br class="ProseMirror-trailingBreak"></div>
+                        <div data-element="31e8d27d-3c7e-42bc-94d0-9831bb465596/aa5c599d-8b95-41c7-a6a3-17c1bebf7c61"
+                             class="cli-body-1 cli-bold" style="display: none;"><br class="ProseMirror-trailingBreak">
+                        </div>
+                    </div>
+                    <a class="cli-header-btn cli-btn fixed cli-header-btn cli-btn fixed primary middle" target=""
+                       data-element="6ac5d920-f88d-40d2-9ab2-3535268657ee/b431a19d-a4d2-4043-a40f-9a83377cb8d4"
+                       data-popup="" data-order="" data-anchor="" style="display: none;" href="{% url 'home' %}"><!----><span
+                            class="cli-btn-text"><br class="ProseMirror-trailingBreak"></span></a></div>
+                <button data-header-open="" class="cli-header-menu-btn"
+                        style="color: rgba(0, 0, 0, 0.7); border-color: rgba(0, 0, 0, 0.7);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         aria-labelledby="cli-mobile-menu" role="presentation"><title id="cli-mobile-menu"
+                                                                                      lang="en"></title>
+                        <g fill="currentColor">
+                            <path d="M4 8C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4ZM4 14C3.44772 14 3 14.4477 3 15C3 15.5523 3.44772 16 4 16H20C20.5523 16 21 15.5523 21 15C21 14.4477 20.5523 14 20 14H4Z"
+                                  fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="cli-bg" style="background: rgb(255, 255, 255);"><!----><!---->
+                <div class="cli-fade"></div>
+            </div>
+        </header>
+    </div><!---->
+

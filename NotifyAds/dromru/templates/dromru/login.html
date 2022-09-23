@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}  Авторизация {% endblock %}
+{% block content %}
+<body style="overflow: hidden auto; max-height: inherit;">
+<div class="page th1 cli-xl cli-md cli-sm">
+    <div data-style="8fc67c20-6b58-4dee-9507-6651bbf64b2a" class="parent-container"><!---->
+        <div class="cli-block cli-light js-force js-strong" block-data="[object Object]" data-block-container=""
+             style="height: 590.297px;">
+            <div data-block="" data-uuid="3c80d724-7940-4ae5-9b31-6b2c90b6ac06"
+                 data-element="3c80d724-7940-4ae5-9b31-6b2c90b6ac06/eee034ab-9c5c-4b55-b39e-4d1293fc4717"
+                 data-design="3c80d724-7940-4ae5-9b31-6b2c90b6ac06" class="cli-form full cli-form-big">
+                <div class="cli-content container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-sm-12 col-md-10 col-xl-6">
+                            <div data-element="4d9cd752-3d22-487c-819e-183ae3cd8692/1662fbf4-22d6-4386-a24d-f1f92c7542be"
+                                 data-design="4d9cd752-3d22-487c-819e-183ae3cd8692" class="cli-title-1 cli-bold">
+                                Войти
+                            </div>
+                            <form data-script="form"
+                                  class="cli-form-block" method="post" action="{% url 'login' %}">
+                                {% csrf_token %}
+                                <div class="cli-input-group">
+                                    <div data-form-field="" class="cli-form-field">
+                                        {{ form.username }}
+                                        {{ form.username.errors }}
+                                        {{ form.password }}
+                                        {{ form.password.errors }}
+                                    </div>
+                                </div>
+                                <button class="cli-btn full primary big" type="submit">
+                                    <span class="cli-btn-text">Войти</span></button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cli-bg" style="background: rgb(255, 255, 255);"><!----><!---->
+                    <div class="cli-fade"></div>
+                </div>
+            </div><!----></div>
+    </div>
+</div>
+
+</body>
+{% endblock %}
