@@ -9,6 +9,12 @@ from django.views.generic import ListView, DetailView, CreateView
 from django.contrib.auth import login, logout
 
 
+
+# переделать с использованием классоа представления
+
+
+
+
 def index(request):
     return render(request, 'dromru/index.html')
 
